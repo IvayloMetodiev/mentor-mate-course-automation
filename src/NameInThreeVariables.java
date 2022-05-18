@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class nameInThreeVariables {
+public class NameInThreeVariables {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
