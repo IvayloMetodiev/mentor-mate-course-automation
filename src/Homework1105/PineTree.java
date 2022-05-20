@@ -1,3 +1,5 @@
+package Homework1105;
+
 import java.util.Scanner;
 
 public class PineTree {
