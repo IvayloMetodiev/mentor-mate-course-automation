@@ -3,7 +3,7 @@ package Homework2605;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ArrayFromUserInput {
+public class ArrayFromUserInputInt {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -16,7 +16,7 @@ public class ArrayFromUserInput {
         numbers.add(favoriteNumbsCastedToInt);
 
         while (!favoriteNumbers.equals("Don't have")){
-            System.out.println("Do you have other favorite numbers. (if you don't have type in (\"Don't have\")");
+            System.out.println("Do you have other favorite numbers? (if you don't have type in (\"Don't have\")");
             favoriteNumbers = scanner.nextLine();
             if (favoriteNumbers.equals("Don't have")){
                 break;
