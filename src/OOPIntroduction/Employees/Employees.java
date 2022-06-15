@@ -1,9 +1,10 @@
 package OOPIntroduction.Employees;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class Employees {
-    final String id;
+    String id;
     String firstName;
     String lastName;
     double monthlySalary;
@@ -12,21 +13,37 @@ public class Employees {
         this.firstName = firstName;
         this.lastName = lastName;
         this.monthlySalary = monthlySalary;
-        this.id = generateID();
+        
     }
 
 
+    public String fixedTheID(){
+        if (id == null){
+            id = generateID();
+        } else {
+            id = id;
+        }
+
+        return id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
 
     public String generateID(){
-        Random random = new Random();
-        int randomNum = random.nextInt(100000);
-        String randomInString = String.valueOf(randomNum);
-        String idPart1 = String.valueOf(firstName.charAt(0));
-        String idPart2 = String.valueOf(lastName.charAt(0));
-        String idPart3 = String.valueOf(randomNum);
-        String finalID = idPart1 + idPart2 + idPart3;
-        return finalID;
-
+        if (id == null){
+            SecureRandom secureRandom = new SecureRandom();
+            int randomNum = secureRandom.nextInt(100000);
+            String idPart1 = String.valueOf(firstName.charAt(0));
+            String idPart2 = String.valueOf(lastName.charAt(0));
+            String idPart3 = String.valueOf(randomNum);
+            String finalID = idPart1 + idPart2 + idPart3;
+            return finalID;
+        } else {
+            return id;
+        }
     }
 
 
