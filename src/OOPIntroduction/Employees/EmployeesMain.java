@@ -19,6 +19,8 @@ public class EmployeesMain {
         System.out.println();
         System.out.println();
 
+        employees1.getId();
+
 
         System.out.printf("Current annual salary of employee %s with id %s is %.2f BGN." +"\n", employees1.getName(), employees1.id,employees1.getAnnualSalary());
         employees1.raiseSalary();
