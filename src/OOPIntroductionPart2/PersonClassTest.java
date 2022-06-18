@@ -29,5 +29,20 @@ public class PersonClassTest {
         person3.canTakeLoan();
         person3.celebratesEaster();
 
+        Child child1 = new Child("Ivan Pertrov", "Male", "Orthodox", "Bulgarian", "test", "Bulgarian", "0045153967", "Canada");
+
+        System.out.println(child1);
+        child1.canTakeLoan();
+        child1.isAdult();
+
+        Bulgarian bulgarian1 = new Bulgarian("Neli Ivanova", "Female", "Muslim", "x", "Office assistant", "x", "9402159988", "USA");
+
+        System.out.println(bulgarian1);
+        bulgarian1.celebratesEaster();
+        bulgarian1.getJob();
+        bulgarian1.isAdult();
+
     }
+
+
 }
