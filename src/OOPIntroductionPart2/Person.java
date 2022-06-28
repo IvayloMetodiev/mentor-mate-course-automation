@@ -3,14 +3,14 @@ package OOPIntroductionPart2;
 import java.time.LocalDate;
 
 public class Person {
-    String name;
+    final String name;
     String sex;
     String religion;
     String language;
     String job;
-    String nationality;
+    final String nationality;
     String personalID;
-    LocalDate dateOfBirth;
+    final LocalDate dateOfBirth;
     short age;
     String countryOfResidence;
 
